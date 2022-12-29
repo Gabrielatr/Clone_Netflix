@@ -1,0 +1,129 @@
+:root{
+    --azul: #0c7acf;
+    --preto: #141414;
+    --filme-principal: url("/images/valorant.jpg");
+    --items: 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+
+body{
+    background-color: var(--preto);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 10px;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--azul); /*rgb(174, 2, 2)*/
+    font-family: 'Arial Black', Times;
+    font-size: 35px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 15px;
+    font-size: 17px;
+}
+header nav a:hover{
+    color: #fff;
+    text-decoration-line: underline;
+    text-decoration-color: var(--azul);
+    text-decoration-style: solid;
+    text-decoration-thickness: 5px;
+    transition: .4s;
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), var(--filme-principal);
+    height: 400px;
+    background-size: cover;
+    display: flex; 
+    flex-direction: column; /*em coluna*/
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-carousel .item:hover{
+    cursor: pointer;
+    /* height: 150px;
+    width: 270px; */
+    position: relative;
+    overflow: visible;
+    margin-top: 20px;
+    transform: scale(1.2);
+    padding: 0 30px;
+}
+
+.filme-carousel .item:active{
+    cursor: pointer;
+    --filme-principal: url("/images/")
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 40%;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 65px;
+    margin-top: 13px;
+}
+
+.filme-principal .titulo{
+    margin-top: 10%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.filme-principal .botao, .btn{
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .4s ease all;
+}
+
+.filme-principal .botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+    font-size: 13px;
+}
+
+.box-filme{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.filme-carousel{
+    margin-top: 10px;
+}
